@@ -21,11 +21,19 @@ end
 options = Net::SSH::Config.for(host)
 options[:user] = ENV['SPEC_USER']
 options[:host_name] = ENV['SPEC_HOST_NAME']
-options[:password] = ENV['SPEC_PASSWORD']
+
+if ENV['SPEC_HOST_AUTHENTICATION']== "key"
+  key = []
+  key << File.read("TestNow.pem")
+  options[:keys_only] = TRUE
+  options[:key_data] = key
+elsif ENV['SPEC_HOST_AUTHENTICATION'] == "password"
+  options[:password] = ENV['SPEC_PASSWORD']
+end
+
 
 set :host,        options[:host_name] || host
 set :ssh_options, options
-
 
 
 
