@@ -1,0 +1,2 @@
+192.168.10.88:shadab:root123
+192.168.10.82:swarnadee:root0713
