@@ -20,7 +20,9 @@ These serverspecs act as Quality Assurance on OS level and Infrastructure level 
 
 ## TYPES OF EXECUTION
 
-* __linux_security__ : This will execute all the specs related to accounts,file permissions,hardening,password security and services. Here mainly the specs will ensure the quality and security of the __OS__ being installed on the VM and check if all the setting and permissions are done as per the requirements.
+1. __linux_security__ : This will execute all the specs related to accounts,file permissions,hardening,password security and services. Here mainly the specs will ensure the quality and security of the __OS__ being installed on the VM and check if all the setting and permissions are done as per the requirements.
+
+2. __hipaa_security__ :This spec automating a security audit of EL based Linux systems.
 
 ## EXECUTION
 * __bash run_script.sh (this will execute all specs included in linux_security)__
