@@ -3,11 +3,10 @@ export SPEC_HOST_NAME="$SPEC_IP"
 export SPEC_USER="$SPEC_USER"
 export SPEC_PASSWORD="$SPEC_PASSWORD"
 
+export HOST_ROLE="$ROLE"
 
 
-
-
-rake spec:linux_security
+rake spec:"$HOST_ROLE"
 
 
 echo "********************************************************************************************"

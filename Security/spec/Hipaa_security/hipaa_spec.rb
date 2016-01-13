@@ -1,32 +1,13 @@
-require 'spec_helper_local'
+require 'spec_helper_ssh'
 
 describe file("/etc/gshadow") do
   it { should be_owned_by 'root' }
-  it { should be_grouped_into 'root' }
-  it { should be_mode 000 }
-end
-
-# describe mail_alias('root') do
-#   it { should be_aliased_to 'root' }
-# end
-
-describe file("/etc/shadow") do
-  it { should be_mode 000 }
 end
 
 describe file("/etc/passwd") do
   it { should be_owned_by 'root' }
   it { should be_grouped_into 'root' }
   it { should be_mode 644 }
-end
-
-describe command('grep "[[:space:]]/tmp[[:space:]]" /etc/fstab') do
-  its(:stdout) { should_not match "" }
-end
-
-
-describe command('grep "[[:space:]]/var[[:space:]]" /etc/fstab') do
-  its(:stdout) { should_not match "" }
 end
 
 describe file("/etc/group") do
@@ -36,46 +17,39 @@ describe file("/etc/group") do
 end
 
 %w(/etc/rpmrc /root/.rpmrc /etc/hosts.equiv).each do |fname|
-describe file(fname) do
-  it { should_not exist }
-end
+  describe file(fname) do
+    it { should_not exist }
+  end
 end
 
 %w(/lib /lib64 /usr/lib /usr/lib64).each do |fname|
-describe file(fname) do
-  it { should be_mode 555 }
-  it { should be_owned_by 'root' }
-end
-end
-
-%w(/bin /usr/bin /usr/local/bin /sbin /usr/sbin /usr/local/sbin).each do |fname|
   describe file(fname) do
-    it { should be_mode 555 }
     it { should be_owned_by 'root' }
   end
 end
 
-describe command("gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory --get/apps/gnome_settings_daemon/keybindings/screensaver") do
-  its(:stdout) { should_not match "" }
+%w(/bin /usr/bin /usr/local/bin /sbin /usr/sbin /usr/local/sbin).each do |fname|
+  describe file(fname) do
+    it { should be_owned_by 'root' }
+  end
 end
 
 describe file("/etc/login.defs") do
-  its(:stdout) { should match "PASS_MIN_DAYS\t1"}
+  its(:content) { should match "ENCRYPT_METHOD SHA512"}
 end
 
 describe file("/etc/ssh/sshd_config") do
-  its(:stdout) {should match "PrintLastLog\tyes"}
+  its(:content) {should match "PrintLastLog yes"}
 end
 
 describe command("find /home -maxdepth 2 -name '.hushlogin'") do
   its(:stdout) { should match ""}
 end
 
-%w(ossec-hids aide).each do |pkg|
-describe package(pkg) do
+describe package('logrotate') do
   it {should be_installed}
 end
-end
+
 
 describe command("find /home -maxdepth 2 -name '.rhosts'") do
   its(:stdout) { should match ""}
@@ -89,49 +63,52 @@ describe command('awk -F: \'($2 != "x") {print}\' /etc/passwd') do
   its(:stdout) { should match ""}
 end
 
-describe 'Linux kernel parameters' do
-  context linux_kernel_parameter('net.ipv4.ip_forward') do
-    its(:value) { should eq 1 }
-    its(:value) { should eq 0 }
+%w(net.ipv4.ip_forward net.ipv4.conf.all.accept_source_route net.ipv4.conf.all.log_martians net.ipv4.conf.all.log_martians).each do |param|
+  describe 'Linux kernel parameters' do
+    context linux_kernel_parameter(param) do
+      its(:value) { should eq 0 }
+    end
   end
 end
 
-%w(iptables ip6tables).each do |ser_name|
-describe service(ser_name) do
-  it { should be_enabled }
-  it { should be_running }
-end
-end
-
-describe 'Linux kernel parameters' do
-  context linux_kernel_parameter('net.ipv4.conf.all.accept_source_route') do
-    its(:value) { should eq 0 }
+%w(net.ipv4.conf.all.accept_redirects net.ipv4.conf.all.secure_redirects net.ipv4.conf.default.accept_source_route net.ipv4.icmp_echo_ignore_broadcasts net.ipv4.icmp_ignore_bogus_error_responses net.ipv4.tcp_syncookies net.ipv4.conf.all.rp_filter net.ipv4.conf.default.rp_filter net.ipv6.conf.default.accept_redirects net.ipv4.conf.all.send_redirects).each do |param|
+  describe 'Linux kernel parameters' do
+    context linux_kernel_parameter(param) do
+      its(:value) { should eq 1 }
+    end
   end
 end
 
-describe 'Linux kernel parameters' do
-  context linux_kernel_parameter('net.ipv4.conf.all.accept_redirects') do
-    its(:value) { should eq 0 }
+%w(xinetd telnet rexec rsh rlogin ypbind tftp abrtd ntpdate oddjobd qpidd rdisc netconsole).each do |service|
+  describe service(service) do
+    it { should_not be_enabled }
+    it { should_not be_running }
   end
 end
 
-describe 'Linux kernel parameters' do
-  context linux_kernel_parameter('net.ipv4.conf.all.secure_redirects') do
-    its(:value) { should eq 0 }
+%w(xinetd telnet-server rsh-server ypserv tftp-server openldap-servers).each do |pkg|
+  describe package(pkg) do
+    it {should_not be_installed}
   end
 end
 
-describe 'Linux kernel parameters' do
-  context linux_kernel_parameter('net.ipv4.conf.all.log_martians') do
-    its(:value) { should eq 0 }
-  end
+describe file('/etc/issue') do
+  it {should exist}
+  it {should be_file}
 end
 
-describe 'Linux kernel parameters' do
-  context linux_kernel_parameter('net.ipv4.conf.all.log_martians') do
-    its(:value) { should eq 0 }
-  end
+describe command('find /home -maxdepth 2 -xdev -name .netrc') do
+  its(:stdout) {should match ""}
 end
 
+describe file('/etc/ssh/sshd_config') do
+  its(:content) {should match "Protocol 2"}
+  its(:content) {should match "IgnoreRhosts"}
+  its(:content) {should match "HostbasedAuthentication no"}
+  its(:content) {should match "PermitEmptyPasswords no"}
+end
 
-
+describe file('/etc/cron.daily/logrotate') do
+  it {should exist}
+  it {should be_file}
+end
