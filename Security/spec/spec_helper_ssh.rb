@@ -24,7 +24,7 @@ options[:host_name] = ENV['SPEC_HOST_NAME']
 
 if ENV['SPEC_HOST_AUTHENTICATION']== "key"
   key = []
-  key << File.read("TestNow.pem")
+  key << File.read("key/#{ENV['SPEC_USER']}_#{ENV['SPEC_IP']}.key")
   options[:keys_only] = TRUE
   options[:key_data] = key
 elsif ENV['SPEC_HOST_AUTHENTICATION'] == "password"

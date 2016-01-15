@@ -39,7 +39,14 @@ do
         export SPEC_IP=${ary[1]}
         export SPEC_USER=${ary[2]}
         export SPEC_PASSWORD=${ary[3]}
-        nohup bash run_testnow_spec.sh  >> out.txt 2>&1 &
+        if [ "${SPEC_AUTHENTICATION}" = "key" ]
+        then
+        touch "key/${SPEC_USER}_${SPEC_IP}.key"
+        echo -e "${SPEC_PASSWORD}" > "key/${SPEC_USER}_${SPEC_IP}.key"
+        chmod 600 key/${SPEC_USER}_${SPEC_IP}.key
+        fi
+
+     nohup bash run_testnow_spec.sh  >> out.txt 2>&1 &
 
 done
 
