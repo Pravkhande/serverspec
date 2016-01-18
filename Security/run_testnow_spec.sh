@@ -6,9 +6,9 @@ export HOST_ROLE="$ROLE"
 
 rake spec:"$HOST_ROLE"
 
-#destOutPut="/var/www/html/${JOB_ID}/${RUN_ID}"
-#
-#scp  -o StrictHostKeyChecking=no -r -i $WORKING_DIR/TestNow.key ${WORKING_DIR}/code/Security/reports/${SPEC_HOST_NAME}* ubuntu@$WEB_SERVER_IP:$destOutPut
+destOutPut="/var/www/html/${JOB_ID}/${RUN_ID}"
+
+scp  -o StrictHostKeyChecking=no -r -i $WORKING_DIR/TestNow.key ${WORKING_DIR}/code/Security/reports/${SPEC_HOST_NAME}* ubuntu@$WEB_SERVER_IP:$destOutPut
 
 
 echo "********************************************************************************************"
