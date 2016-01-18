@@ -23,7 +23,7 @@
 #done
 
 #This block is used for machine details from environment variable
-
+bundle install
 IFS=$';' GLOBIGNORE='*' command eval  'IPs=($IPS)'
 for i in "${IPs[@]}"
 do
@@ -46,7 +46,7 @@ do
         chmod 600 key/${SPEC_USER}_${SPEC_IP}.key
         fi
 
-     nohup bash run_testnow_spec.sh  >> out.txt 2>&1 &
+       nohup bash run_testnow_spec.sh  >> out.txt 2>&1 &
 
 done
 
