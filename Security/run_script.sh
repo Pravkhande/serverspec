@@ -23,7 +23,6 @@
 #done
 
 #This block is used for machine details from environment variable
-bundle install
 IFS=$';' GLOBIGNORE='*' command eval  'IPs=($IPS)'
 for i in "${IPs[@]}"
 do
