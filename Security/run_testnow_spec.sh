@@ -6,7 +6,7 @@ export HOST_ROLE="$ROLE"
 
 rake spec:"$HOST_ROLE"
 
-
+scp  -o StrictHostKeyChecking=no -r -i $mainDir/TestNow.key ${mainDir}/code/Security/reports/${SPEC_HOST_NAME}* ubuntu@$WEB_SERVER_IP:$destOutPut
 echo "********************************************************************************************"
 echo "* Report for this execution has been created in Reports folder as 'serverspec_report.html' *"
 echo "********************************************************************************************"
