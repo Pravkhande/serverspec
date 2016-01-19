@@ -38,6 +38,11 @@ do
         export SPEC_IP=${ary[1]}
         export SPEC_USER=${ary[2]}
         export SPEC_PASSWORD=${ary[3]}
+        replace=' '
+        TITLE1=$(echo "${ROLE}" | sed "s/_/${replace}/")
+        TITLE2=$(echo "${TITLE1^^} REPORT" )
+        export TITLE=$TITLE2
+
         if [ "${SPEC_AUTHENTICATION}" = "key" ]
         then
         touch "key/${SPEC_USER}_${SPEC_IP}.key"

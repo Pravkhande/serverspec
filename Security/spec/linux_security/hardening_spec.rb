@@ -1,4 +1,7 @@
 require 'spec_helper_ssh'
+require "rspec/expectations"
+require 'utilities'
+
 
 # This block check for file content path should not match .,..,;
 %w(/etc/bash.bashrc /etc/profile).each do |fname|
@@ -145,5 +148,12 @@ end
 
 describe command("/sbin/sysctl -w fs.protected_symlinks=1") do
   its(:stdout) { should match "fs.protected_symlinks=1\n" }
+end
+
+
+RSpec.configure do |config|
+  config.after(:suite) do
+    replace_report_title
+  end
 end
 

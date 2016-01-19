@@ -1,4 +1,7 @@
 require 'spec_helper_ssh'
+require "rspec/expectations"
+require 'utilities'
+
 
 describe file("/etc/gshadow") do
   it { should be_owned_by 'root' }
@@ -111,4 +114,10 @@ end
 describe file('/etc/cron.daily/logrotate') do
   it {should exist}
   it {should be_file}
+end
+
+RSpec.configure do |config|
+  config.after(:suite) do
+    replace_report_title
+  end
 end

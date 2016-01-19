@@ -4,7 +4,10 @@ export SPEC_USER="$SPEC_USER"
 export SPEC_PASSWORD="$SPEC_PASSWORD"
 export HOST_ROLE="$ROLE"
 
-rake spec:"$HOST_ROLE"
+rake spec:"$HOST_ROLE" TITLE="${TITLE}"
+echo "-------------"
+echo ${TITLE}
+echo "-------------"
 
 destOutPut="/var/www/html/${JOB_ID}/${RUN_ID}"
 

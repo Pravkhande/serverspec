@@ -1,4 +1,6 @@
 require 'spec_helper_ssh'
+require "rspec/expectations"
+require 'utilities'
 
 describe file('/etc/ssh/sshd_config') do
   it { should be_file }
@@ -174,5 +176,12 @@ describe file('/etc/passwd') do
     expect {
       should be_immutable
     }.to raise_exception
+  end
+end
+
+
+RSpec.configure do |config|
+  config.after(:suite) do
+     replace_report_title
   end
 end

@@ -1,4 +1,6 @@
 require 'spec_helper_ssh'
+require "rspec/expectations"
+require 'utilities'
 
 describe host('127.0.0.1') do
   it { should be_reachable }
@@ -18,3 +20,8 @@ describe host('www.google.com') do
   it { should_not be_resolvable.by('hosts') }
 end
 
+RSpec.configure do |config|
+  config.after(:suite) do
+    replace_report_title
+  end
+end

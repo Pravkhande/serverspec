@@ -1,4 +1,6 @@
 require 'spec_helper_ssh'
+require "rspec/expectations"
+require 'utilities'
 
 describe file('/run/shm') do
   it { should be_mounted.with( :options => { nodev: true } ) }
@@ -167,4 +169,10 @@ end
 
 describe command('/usr/bin/awk -F: \'($3 == 0) { print $1 }\' /etc/passwd') do
   its(:stdout) {should match "root"}
+end
+
+RSpec.configure do |config|
+  config.after(:suite) do
+    replace_report_title
+  end
 end

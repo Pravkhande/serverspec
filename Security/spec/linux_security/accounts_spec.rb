@@ -1,4 +1,7 @@
 require 'spec_helper_ssh'
+require "rspec/expectations"
+require 'utilities'
+
 
 # This block check user in the file
 describe file('/etc/passwd') do
@@ -15,4 +18,10 @@ end
 # This block check for user with uid 0 in file
 describe command("awk -F: '($3 == '0') {print}' /etc/passwd") do
   its(:stdout){ should match "root" }
+end
+
+RSpec.configure do |config|
+  config.after(:suite) do
+    replace_report_title
+  end
 end
