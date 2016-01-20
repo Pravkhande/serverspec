@@ -45,6 +45,7 @@ do
 
         if [ "${SPEC_AUTHENTICATION}" = "key" ]
         then
+        mkdir "key"
         touch "key/${SPEC_USER}_${SPEC_IP}.key"
         echo -e "${SPEC_PASSWORD}" > "key/${SPEC_USER}_${SPEC_IP}.key"
         chmod 600 key/${SPEC_USER}_${SPEC_IP}.key
