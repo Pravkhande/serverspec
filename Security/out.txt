@@ -1,0 +1,1337 @@
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `encode': "\xC2" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `to_json'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `close'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:146:in `block in notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `each'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:134:in `finish'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:64:in `report'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec:4:in `<main>'
+/etc/cron.d
+/etc/cron.hourly
+/etc/crontab
+/etc/cron.daily
+/etc/cron.monthly
+/etc/cron.weekly
+/var/spool/cron/atjobs
+/var/spool/cron/atspool
+/var/spool/cron/crontabs
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+after suite
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+Warning: Identity file /TestNow.key not accessible: No such file or directory.
+ssh: Could not resolve hostname : No address associated with hostname
+lost connection
+ruby: No such file or directory -- /InfraTestDataParser.rb (LoadError)
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `encode': "\xC2" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `to_json'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `close'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:146:in `block in notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `each'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:134:in `finish'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:64:in `report'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec:4:in `<main>'
+/etc/cron.d
+/etc/cron.hourly
+/etc/crontab
+/etc/cron.daily
+/etc/cron.monthly
+/etc/cron.weekly
+/var/spool/cron/atjobs
+/var/spool/cron/atspool
+/var/spool/cron/crontabs
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+after suite
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+Warning: Identity file /TestNow.key not accessible: No such file or directory.
+ssh: Could not resolve hostname : No address associated with hostname
+lost connection
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `encode': "\xC2" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `to_json'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `close'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:146:in `block in notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `each'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:134:in `finish'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:64:in `report'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec:4:in `<main>'
+/etc/cron.d
+/etc/cron.hourly
+/etc/crontab
+/etc/cron.daily
+/etc/cron.monthly
+/etc/cron.weekly
+/var/spool/cron/atjobs
+/var/spool/cron/atspool
+/var/spool/cron/crontabs
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+after suite
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+Warning: Identity file /TestNow.key not accessible: No such file or directory.
+ssh: Could not resolve hostname : No address associated with hostname
+lost connection
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `encode': "\xC2" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `to_json'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `close'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:146:in `block in notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `each'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:134:in `finish'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:64:in `report'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec:4:in `<main>'
+/etc/cron.d
+/etc/cron.hourly
+/etc/crontab
+/etc/cron.daily
+/etc/cron.monthly
+/etc/cron.weekly
+/var/spool/cron/atjobs
+/var/spool/cron/atspool
+/var/spool/cron/crontabs
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+after suite
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+Warning: Identity file /TestNow.key not accessible: No such file or directory.
+ssh: Could not resolve hostname : No address associated with hostname
+lost connection
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `encode': "\xC2" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `to_json'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `close'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:146:in `block in notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `each'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:134:in `finish'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:64:in `report'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec:4:in `<main>'
+/etc/cron.d
+/etc/cron.hourly
+/etc/crontab
+/etc/cron.daily
+/etc/cron.monthly
+/etc/cron.weekly
+/var/spool/cron/atjobs
+/var/spool/cron/atspool
+/var/spool/cron/crontabs
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+after suite
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+Warning: Identity file /TestNow.key not accessible: No such file or directory.
+ssh: Could not resolve hostname : No address associated with hostname
+lost connection
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `encode': "\xC2" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `to_json'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `close'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:146:in `block in notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `each'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:134:in `finish'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:64:in `report'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec:4:in `<main>'
+/etc/cron.d
+/etc/cron.hourly
+/etc/crontab
+/etc/cron.daily
+/etc/cron.monthly
+/etc/cron.weekly
+/var/spool/cron/atjobs
+/var/spool/cron/atspool
+/var/spool/cron/crontabs
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+after suite
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+Warning: Identity file /TestNow.key not accessible: No such file or directory.
+ssh: Could not resolve hostname : No address associated with hostname
+lost connection
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+0
+15
+1
+16
+2
+17
+3
+18
+4
+19
+5
+20
+6
+21
+7
+22
+8
+23
+9
+24
+10
+25
+11
+26
+12
+27
+13
+28
+14
+29
+15
+30
+16
+31
+17
+32
+18
+33
+19
+34
+20
+35
+21
+36
+22
+37
+23
+38
+24
+39
+25
+40
+26
+41
+27
+42
+28
+43
+nohup: ignoring input
+29
+44
+0
+30
+45
+1
+31
+46
+2
+32
+47
+3
+33
+48
+4
+34
+49
+5
+35
+50
+6
+36
+51
+7
+37
+52
+8
+38
+53
+9
+39
+54
+10
+40
+55
+11
+41
+56
+12
+42
+57
+13
+43
+58
+14
+44
+59
+15
+45
+60
+16
+46
+61
+17
+47
+62
+18
+48
+63
+19
+49
+64
+20
+50
+65
+21
+51
+66
+22
+52
+67
+23
+53
+68
+24
+54
+69
+25
+55
+70
+26
+56
+71
+27
+57
+72
+28
+58
+73
+29
+59
+74
+30
+60
+75
+31
+61
+76
+32
+62
+77
+33
+63
+78
+34
+64
+79
+35
+65
+80
+36
+66
+81
+37
+67
+82
+38
+68
+83
+39
+69
+84
+40
+70
+85
+41
+71
+86
+42
+72
+87
+43
+73
+88
+44
+74
+89
+45
+75
+90
+46
+76
+91
+47
+77
+92
+48
+78
+93
+49
+79
+94
+50
+80
+95
+51
+81
+96
+52
+82
+97
+53
+83
+98
+54
+84
+99
+55
+85
+56
+86
+57
+87
+58
+88
+59
+89
+60
+90
+61
+91
+62
+92
+63
+93
+64
+94
+65
+95
+66
+96
+67
+97
+68
+98
+69
+99
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+nohup: ignoring input
+21
+0
+22
+1
+23
+2
+24
+3
+25
+4
+0
+26
+5
+1
+27
+6
+2
+28
+7
+3
+29
+8
+4
+30
+9
+5
+31
+10
+6
+32
+11
+7
+33
+12
+8
+34
+13
+9
+35
+14
+10
+36
+15
+11
+37
+16
+12
+38
+17
+13
+39
+18
+14
+40
+19
+15
+41
+20
+16
+42
+0
+21
+17
+43
+1
+22
+44
+18
+2
+23
+19
+45
+3
+24
+20
+46
+4
+25
+21
+47
+5
+26
+22
+48
+6
+27
+49
+23
+7
+28
+24
+50
+8
+29
+25
+51
+9
+30
+26
+52
+10
+31
+27
+53
+11
+32
+28
+54
+12
+33
+29
+55
+13
+34
+30
+56
+14
+35
+31
+57
+15
+36
+32
+58
+16
+37
+33
+59
+17
+38
+34
+60
+18
+39
+35
+61
+19
+40
+36
+62
+20
+41
+37
+63
+21
+42
+38
+64
+22
+43
+65
+39
+23
+44
+66
+40
+24
+45
+67
+41
+25
+46
+68
+42
+26
+47
+69
+43
+27
+48
+70
+44
+28
+49
+71
+45
+29
+50
+46
+72
+30
+51
+73
+47
+31
+0
+52
+74
+48
+32
+1
+53
+49
+75
+33
+2
+54
+50
+76
+34
+3
+55
+51
+77
+35
+4
+56
+52
+78
+36
+5
+57
+53
+79
+37
+6
+58
+54
+80
+38
+7
+59
+81
+55
+39
+8
+60
+82
+56
+40
+9
+61
+83
+57
+41
+62
+84
+58
+42
+63
+85
+59
+43
+64
+60
+86
+44
+65
+87
+61
+45
+66
+88
+62
+46
+67
+89
+63
+47
+68
+64
+90
+48
+69
+91
+65
+49
+70
+92
+66
+50
+71
+67
+93
+51
+72
+94
+68
+52
+73
+69
+95
+53
+74
+70
+96
+54
+75
+71
+97
+55
+76
+72
+98
+56
+77
+73
+99
+57
+78
+74
+58
+79
+75
+59
+80
+76
+60
+81
+77
+61
+82
+78
+62
+83
+79
+63
+84
+80
+64
+85
+81
+65
+86
+82
+66
+87
+83
+67
+88
+84
+68
+89
+85
+69
+90
+86
+70
+91
+87
+71
+92
+88
+72
+93
+89
+73
+94
+90
+74
+95
+91
+75
+96
+92
+76
+97
+93
+77
+98
+94
+78
+99
+95
+79
+96
+80
+97
+81
+98
+82
+99
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+0
+1
+1
+2
+2
+3
+3
+4
+4
+5
+5
+6
+6
+7
+7
+8
+8
+9
+9
+0
+0
+1
+1
+2
+2
+3
+3
+4
+4
+5
+5
+6
+6
+7
+7
+8
+8
+9
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/etc/cron.d
+/etc/cron.hourly
+/etc/crontab
+/etc/cron.daily
+/etc/cron.monthly
+/etc/cron.weekly
+/var/spool/cron/atjobs
+/var/spool/cron/atspool
+/var/spool/cron/crontabs
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+Warning: Identity file /TestNow.key not accessible: No such file or directory.
+ssh: Could not resolve hostname : No address associated with hostname
+lost connection
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `encode': "\xC2" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `to_json'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `close'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:146:in `block in notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `each'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:134:in `finish'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:64:in `report'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec:4:in `<main>'
+/etc/cron.d
+/etc/cron.hourly
+/etc/crontab
+/etc/cron.daily
+/etc/cron.monthly
+/etc/cron.weekly
+/var/spool/cron/atjobs
+/var/spool/cron/atspool
+/var/spool/cron/crontabs
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+after suite
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+Warning: Identity file /TestNow.key not accessible: No such file or directory.
+ssh: Could not resolve hostname : No address associated with hostname
+lost connection
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `encode': "\xC2" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `to_json'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `close'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:146:in `block in notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `each'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:134:in `finish'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:64:in `report'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec:4:in `<main>'
+/etc/cron.d
+/etc/cron.hourly
+/etc/crontab
+/etc/cron.daily
+/etc/cron.monthly
+/etc/cron.weekly
+/var/spool/cron/atjobs
+/var/spool/cron/atspool
+/var/spool/cron/crontabs
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+after suite
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `encode': "\xC2" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `to_json'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `close'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:146:in `block in notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `each'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:134:in `finish'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:64:in `report'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec:4:in `<main>'
+/etc/cron.d
+/etc/cron.hourly
+/etc/crontab
+/etc/cron.daily
+/etc/cron.monthly
+/etc/cron.weekly
+/var/spool/cron/atjobs
+/var/spool/cron/atspool
+/var/spool/cron/crontabs
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+after suite
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb spec/base_security/file_spec.rb spec/base_security/group_spec.rb spec/base_security/host_spec.rb spec/base_security/port_spec.rb spec/base_security/user_spec.rb spec/linux_security/accounts_spec.rb spec/linux_security/file_system_permissions_spec.rb spec/linux_security/hardening_spec.rb spec/linux_security/minimal_permissions_for_shares_spec.rb spec/linux_security/password_security_spec.rb spec/linux_security/services_spec.rb spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/security_audit/audit_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `encode': "\xC2" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `to_json'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `close'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:146:in `block in notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `each'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:134:in `finish'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:64:in `report'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec:4:in `<main>'
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb spec/CIS_audit/centos7_spec.rb spec/CIS_audit/ubuntu_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `encode': "\xC2" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `to_json'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `close'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:146:in `block in notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `each'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:134:in `finish'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:64:in `report'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec:4:in `<main>'
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos6_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos7_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `encode': "\xC2" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `to_json'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/formatters/json_formatter.rb:48:in `close'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:146:in `block in notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `each'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:145:in `notify'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:134:in `finish'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:64:in `report'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+	from /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec:4:in `<main>'
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/centos7_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/ubuntu_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json
+/home/nikhia/infra-tests/Security/reports/52.90.230.153_security_report.html
+/usr/bin/ruby1.9.1 -I/var/lib/gems/1.9.1/gems/rspec-support-3.2.2/lib:/var/lib/gems/1.9.1/gems/rspec-core-3.2.0/lib /var/lib/gems/1.9.1/gems/rspec-core-3.2.0/exe/rspec spec/CIS_audit/ubuntu_spec.rb --format html --out reports/52.90.230.153_security_report.html --format json --out reports/52.90.230.153_security_report.json failed
+-------------
+SECURITY ROLE REPORT
+-------------
+********************************************************************************************
+* Report for this execution has been created in Reports folder as 'serverspec_report.html' *
+********************************************************************************************

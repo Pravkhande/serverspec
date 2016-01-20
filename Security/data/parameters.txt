@@ -1,4 +1,4 @@
 password:192.168.10.88:shadab:root123
-key:52.23.204.148:ubuntu:TestNow.pem
+key:54.86.42.196:ubuntu:TestNow.pem
 
 

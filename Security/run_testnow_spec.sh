@@ -4,14 +4,17 @@ export SPEC_USER="$SPEC_USER"
 export SPEC_PASSWORD="$SPEC_PASSWORD"
 export HOST_ROLE="$ROLE"
 
-rake spec:"$HOST_ROLE" TITLE="${TITLE}"
+#rake spec:"$HOST_ROLE" TITLE="${TITLE}"
+rake security:"$HOST_ROLE" TITLE="${TITLE}"
 echo "-------------"
 echo ${TITLE}
 echo "-------------"
 
 destOutPut="/var/www/html/${JOB_ID}/${RUN_ID}"
 
-scp  -o StrictHostKeyChecking=no -r -i $WORKING_DIR/TestNow.key ${WORKING_DIR}/code/Security/reports/${SPEC_HOST_NAME}* ubuntu@$WEB_SERVER_IP:$destOutPut
+#scp  -o StrictHostKeyChecking=no -r -i $WORKING_DIR/TestNow.key ${WORKING_DIR}/code/Security/reports/${SPEC_HOST_NAME}* ubuntu@$WEB_SERVER_IP:$destOutPut
+
+#ruby $WORKING_DIR/InfraTestDataParser.rb ${SPEC_HOST_NAME} ${HOST_ROLE}
 
 ruby $WORKING_DIR/InfraTestDataParser.rb ${SPEC_HOST_NAME} ${HOST_ROLE}
 

@@ -1,35 +1,63 @@
 require 'rake'
 require 'rspec/core/rake_task'
 
-task :spec    => 'spec:all'
-task :default => :spec
+# task :spec    => 'spec:all'
+# task :default => :spec
+#
+# namespace :spec do
+#   targets = []
+#   Dir.glob('./spec/*').each do |dir|
+#     next unless File.directory?(dir)
+#     target = File.basename(dir)
+#     target = "_#{target}" if target == "default"
+#     targets << target
+#   end
+#
+#   task :all     => targets
+#   task :default => :all
+#
+#   targets.each do |target|
+#     original_target = target == "_default" ? target[1..-1] : target
+#     desc "Run serverspec tests to #{original_target}"
+#     RSpec::Core::RakeTask.new(target.to_sym) do |t|
+#       ENV['TARGET_HOST'] = original_target
+#       t.pattern = "spec/#{original_target}/*_spec.rb"
+#       t.rspec_opts = ["--format", "html","--out", "reports/#{ENV['SPEC_HOST_NAME']}_#{original_target}.html", "--format", "json", "--out", "reports/#{ENV['SPEC_HOST_NAME']}_#{original_target}.json"]
+#     end
+#
+#   end
+#
+# end
 
-namespace :spec do
-  targets = []
-  Dir.glob('./spec/*').each do |dir|
-    next unless File.directory?(dir)
-    target = File.basename(dir)
-    target = "_#{target}" if target == "default"
-    targets << target
+
+security_role = [
+    "spec/CIS_audit/centos6_spec.rb",
+     "spec/CIS_audit/centos7_spec.rb",
+     "spec/CIS_audit/ubuntu_spec.rb",
+
+    "spec/base_security/file_spec.rb",
+    "spec/base_security/group_spec.rb",
+    "spec/base_security/host_spec.rb",
+    "spec/base_security/port_spec.rb",
+    "spec/base_security/user_spec.rb",
+
+    "spec/linux_security/accounts_spec.rb",
+    "spec/linux_security/file_system_permissions_spec.rb",
+    "spec/linux_security/hardening_spec.rb",
+    "spec/linux_security/minimal_permissions_for_shares_spec.rb",
+    "spec/linux_security/password_security_spec.rb",
+    "spec/linux_security/services_spec.rb",
+
+
+    "spec/security_audit/audit_spec.rb"
+]
+
+namespace :security do
+  RSpec::Core::RakeTask.new("security_role") do |role|
+    role.pattern = security_role
+    role.rspec_opts = ["--format", "html", "--out", "reports/#{ENV['SPEC_HOST_NAME']}_security_report.html", "--format", "json", "--out", "reports/#{ENV['SPEC_HOST_NAME']}_security_report.json"]
   end
-
-  task :all     => targets
-  task :default => :all
-
-  targets.each do |target|
-    original_target = target == "_default" ? target[1..-1] : target
-    desc "Run serverspec tests to #{original_target}"
-    RSpec::Core::RakeTask.new(target.to_sym) do |t|
-      ENV['TARGET_HOST'] = original_target
-      t.pattern = "spec/#{original_target}/*_spec.rb"
-      t.rspec_opts = ["--format", "html","--out", "reports/#{ENV['SPEC_HOST_NAME']}_#{original_target}.html", "--format", "json", "--out", "reports/#{ENV['SPEC_HOST_NAME']}_#{original_target}.json"]
-    end
-
   end
-
-end
-
-
 
 
 
