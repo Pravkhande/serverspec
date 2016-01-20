@@ -53,6 +53,21 @@ do
 
        nohup bash run_testnow_spec.sh  >> out.txt 2>&1 &
 
+ count_arr["${int}"]=$!
+       int=$((int+1))
+
+done
+
+for ip_pid in "${count_arr[@]}"
+do
+	echo $ip_pid
+	count=`ps -eaf | grep $ip_pid | grep -v grep | wc -l`
+
+	while [ "$count" -gt 0 ]
+	do
+		sleep 5
+		count=`ps -eaf | grep $ip_pid | grep -v grep | wc -l`
+	done
 done
 
 
