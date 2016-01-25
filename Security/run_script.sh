@@ -42,7 +42,7 @@ do
         IFS='+' read -ra roleary <<< "$ROLE"
         for role in "${roleary[@]}"
         do
-            export ROLE=role
+            export ROLE=${role}
             TITLE1=$(echo "${ROLE}" | sed "s/_/${replace}/")
             TITLE2=$(echo "${TITLE1^^} REPORT" )
             export TITLE=$TITLE2
