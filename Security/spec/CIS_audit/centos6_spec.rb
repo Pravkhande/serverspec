@@ -296,14 +296,16 @@ require 'utilities'
   end
 # end
 
-# describe 'User Accounts and Environment' do
-  describe file('/etc/login.defs') do
-    it {should be_file}
-    its(:content) {should match /^PASS_MAX_DAYS\s+[1-9]{2}/}
-    its(:content) {should match /^PASS_MIN_DAYS\s+[1-7]/}
-    its(:content) {should match /^PASS_WARN_AGE\s+([7-9]|[1-9]\d+)/}
-  end
-# end
+# # describe 'User Accounts and Environment' do
+# #   describe file('/home/nikhia/infra-tests/Security/login.defs') do
+# describe file('/etc/login.defs') do
+#     it {should be_file}
+#     mycontent = :content.to_s.encode('utf-8', :invalid => :replace, :undef => :replace, :replace => '')
+#     its(mycontent) {should match /^PASS_MAX_DAYS\s+[1-9]{2}/}
+#     its(mycontent) {should match /^PASS_MIN_DAYS\s+[1-7]/}
+#     its(mycontent) {should match /^PASS_WARN_AGE\s+([7-9]|[1-9]\d+)/}
+#   end
+# # end
 
 # describe 'Default Group for root Account' do
   describe group('root') do
