@@ -62,17 +62,17 @@ do
 
 done
 
-for ip_pid in "${count_arr[@]}"
-do
-	echo $ip_pid
-	count=`ps -eaf | grep $ip_pid | grep -v grep | wc -l`
-
-	while [ "$count" -gt 0 ]
-	do
-		sleep 5
-		count=`ps -eaf | grep $ip_pid | grep -v grep | wc -l`
-	done
-done
+#for ip_pid in "${count_arr[@]}"
+#do
+#	echo $ip_pid
+#	count=`ps -eaf | grep $ip_pid | grep -v grep | wc -l`
+#
+#	while [ "$count" -gt 0 ]
+#	do
+#		sleep 5
+#		count=`ps -eaf | grep $ip_pid | grep -v grep | wc -l`
+#	done
+#done
 
 
 
