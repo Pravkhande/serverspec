@@ -69,8 +69,8 @@ do
 
 	while [ "$count" -gt 0 ]
 	do  
-	    echo "Waiting for 10 seconds"
-		sleep 10
+	    echo "Waiting for 5 seconds to terminate process with $ip_pid"
+		sleep 5
 		count=`ps -eaf | grep $ip_pid | grep -v grep | wc -l`
 		echo $count
 	done
